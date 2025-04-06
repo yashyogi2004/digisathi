@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Wellness Hub</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>College Wellness Hub</h1>
+        <p>Find your balance and thrive.</p>
+    </header>
+
+    <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/peergroup">Community</a>
+        <a href="/chatbot">Support</a>
+        <a href="/mindfulness">Mindful activity</a>
+        <a href="/reflect">Your Space</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Embrace Your Well-being</h1>
+            <p>Personalized support for your emotional and mental health journey in college.</p>
+            <a href="#" class="cta-button">Discover Your mind</a>
+        </div>
+        <div class="hero-image">
+            <img src="/images/home.jpeg" alt="Abstract illustration of well-being">
+        </div>
+    </section>
+
+    <section class="mood-indicator">
+        <div class="mood-content">
+            <h2>How Are You Feeling Today?</h2>
+            <div class="mood-display">
+                <span class="mood-icon">😊</span>
+                <p class="mood-text">Looks like you're feeling positive!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendations">
+        <h2>Curated for Your Mood</h2>
+        <div class="recommendations-grid">
+            <div class="recommendation-card">
+                <div class="card-icon"><img src="music.jpeg" alt="Music Icon"></div>
+                <h3>Uplifting Sounds</h3>
+                <p>Boost your mood with energizing tunes.</p>
+                <a href="/music">Explore Playlist</a>
+            </div>
+            <div class="recommendation-card">
+                <div class="card-icon"><img src="medi.webp" alt="Meditation Icon"></div>
+                <h3>Find Your Calm</h3>
+                <p>Quick exercises for stress relief.</p>
+                <a href="#">Try Now</a>
+            </div>
+            <div class="recommendation-card">
+                <div class="card-icon"><img src="/imgages/moti-pharse.jpeg" alt="Journal Icon"></div>
+                <h3>Reflect & Grow</h3>
+                <p>Thought-provoking prompts to guide you.</p>
+                <a href="/reflect">Start Writing</a>
+            </div>
+            <div class="recommendation-card">
+                <div class="card-icon"><img src="exercise.webp" alt="Movement Icon"></div>
+                <h3>Move Your Body</h3>
+                <p>Short videos for a quick energy boost.</p>
+                <a href="/exercise">Get Active</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Explore Our Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <img src="/images/OIP 3.jpeg" alt="Community Icon">
+                <h3>Connect & Share</h3>
+                <p>Join peer groups and find your support network.</p>
+                <a href="/peergroup">Discover Communities</a>
+            </div>
+            <div class="feature-item">
+                <img src="/images/support.png" alt="Support Icon">
+                <h3>Confidential Support</h3>
+                <p>Access resources and connect with counselors.</p>
+                <a href="#">Find Support</a>
+            </div>
+            <div class="feature-item">
+                <img src="/images/robo.jpeg" alt="Chatbot Icon">
+                <h3>Your Mindful Assistant</h3>
+                <p>24/7 AI for tips, quotes, and stress relief.</p>
+                <a href="/chatbot">Chat Now</a>
+            </div>
+            <div class="feature-item">
+                <img src="/images/7097611.webp" alt="Progress Icon">
+                <h3>Track Your Journey</h3>
+                <p>Monitor your mood and celebrate your progress.</p>
+                <a href="/privacy">View Your Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 College Wellness Hub. Crafted with care.</p>
+    </footer>
+
+    <script>
+        // Basic JavaScript for potential interactive elements (more complex logic would be in a separate JS file)
+        // Example: Update mood icon dynamically (this is still a placeholder)
+        const moodIcon = document.querySelector('.mood-icon');
+        const moodText = document.querySelector('.mood-text');
+        const moods = [
+            { icon: '😊', text: "Looks like you're feeling positive!" },
+            { icon: '😔', text: "We're here for you. Take it easy." },
+            { icon: '😟', text: "Remember to be kind to yourself." }
+        ];
+        let moodIndex = 0;
+        // setInterval(() => {
+        //     moodIndex = (moodIndex + 1) % moods.length;
+        //     moodIcon.textContent = moods[moodIndex].icon;
+        //     moodText.textContent = moods[moodIndex].text;
+        // }, 7000);
+    </script>
+</body>
+</html>

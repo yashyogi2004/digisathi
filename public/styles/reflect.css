@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Black text */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+.quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-grow: 1; /* Allow grid to take up remaining vertical space */
+}
+
+.quote-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quote-card img {
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.quote-text {
+    font-style: italic;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    flex-grow: 1; /* Allow text to push footer down */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Aesthetic Touches */
+body {
+    background-image: url('images/subtle-pattern.png'); /* Optional: Add a subtle background pattern */
+    background-repeat: repeat;
+}
+
+.quote-card {
+    border: 1px solid #eee;
+}
+
+.quote-text::before,
+.quote-text::after {
+    content: '"';
+    color: #aaa;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .quotes-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,250 @@
+/* privacy.css (Improved Aesthetic CSS with Enhanced Box Usage) */
+
+body {
+  background-color: #f8f9fa; /* Very light background */
+  color: #343a40; /* Darker text for readability */
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body.dark {
+  background-color: #212529; /* Darker dark mode */
+  color: #e9ecef;
+}
+
+main {
+  padding: 2.5rem; /* Increased padding */
+  max-width: 68rem; /* Wider main section */
+  margin: 3rem auto; /* More margin for spacing */
+  flex-grow: 1;
+}
+
+header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.75rem; /* Even larger title */
+  font-weight: 700;
+  color: #6610f2; /* Vibrant primary color */
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+body.dark header h1 {
+  color: #a78bfa;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  opacity: 0.9;
+}
+
+body.dark header p {
+  color: #adb5bd;
+}
+
+.tool-section {
+  background-color: #fff;
+  border-radius: 1.25rem; /* More rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Deeper shadow */
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  transition: box-shadow 0.3s;
+  border: 1px solid #dee2e6; /* Subtle border */
+}
+
+body.dark .tool-section {
+  background-color: #343a40;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border-color: #495057;
+}
+
+.tool-title {
+  font-size: 2rem; /* Larger title */
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #212529;
+  border-bottom: 2px solid #e9ecef; /* Thicker border */
+  padding-bottom: 1.25rem;
+}
+
+body.dark .tool-title {
+  color: #e9ecef;
+  border-bottom-color: #495057;
+}
+
+label.block {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: #495057;
+}
+
+body.dark label.block {
+  color: #ced4da;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ced4da;
+  background-color: #f8f9fa;
+  color: #343a40;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 16, 242, 0.15); /* Primary color highlight */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark .input-field {
+  border-color: #495057;
+  background-color: #343a40;
+  color: #e9ecef;
+}
+
+.btn-blue, .btn-red {
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger button shadow */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #6610f2;
+  color: #fff;
+}
+
+.btn-blue:hover {
+  background-color: #563d7c;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-red:hover {
+  background-color: #c82333;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+body.dark .checkbox-label {
+  color: #ced4da;
+}
+
+.consent-checkbox {
+  border-radius: 0.3rem;
+  border: 1px solid #ced4da;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 16, 242, 0.15);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark .consent-checkbox {
+  border-color: #495057;
+}
+
+#profilePhotoPreview {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#changePasswordBtn, #viewLoginHistoryBtn {
+  color: #6610f2;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+#changePasswordBtn:hover, #viewLoginHistoryBtn:hover {
+  color: #563d7c;
+}
+
+#lastSaved {
+  font-size: 0.9rem;
+  color: #6c757d;
+  opacity: 0.8;
+}
+
+body.dark #lastSaved {
+  color: #adb5bd;
+}
+
+#blockedUsersList {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inset shadow */
+  color: black;
+}
+
+body.dark #blockedUsersList {
+  background-color: #3d4247;
+  border-color: #495057;
+  
+}
+
+.mt-4:active{
+  transform: scale(1.01);
+}
+.mt-4:hover{
+  transition: ease-in-out 0.3s;
+}
+
+#blockUserInput {
+  flex-grow: 1;
+  margin-right: 0.75rem;
+
+}
+
+/* Hover and Active States */
+.btn-blue:active, .btn-red:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 3px rgba(102, 16, 242, 0.25);
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 640px) {
+  header h1 {
+      font-size: 2.25rem;
+  }
+  header p {
+      font-size: 1.1rem;
+  }
+  .tool-title {
+      font-size: 1.75rem;
+  }
+  label.block, .checkbox-label {
+      font-size: 1rem;
+  }
+  .input-field, .btn-blue, .btn-red {
+      padding: 0.8rem;
+  }
+}

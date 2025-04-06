@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Privacy & Account Settings | Wellness Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/styles/privacy.css" />
+    <script defer src="/scripts/privacy.js"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-inter transition duration-300">
+
+    <main class="min-h-screen p-6 max-w-4xl mx-auto">
+        <header class="mb-6">
+            <h1 class="text-3xl font-bold">🛡️ Account & Security Settings</h1>
+            <p class="text-gray-600 dark:text-gray-400 mt-1">Manage your account, security, and privacy preferences.</p>
+        </header>
+
+        <section class="tool-section" aria-labelledby="profile-title">
+            <h2 id="profile-title" class="tool-title">👤 Profile Settings</h2>
+            <div class="space-y-3">
+                <div class="flex items-center space-x-4">
+                    <img id="profilePhotoPreview" src="users.png" alt="Profile Photo" class="w-16 h-16 rounded-full">
+                    <div>
+                        <label for="profilePhoto" class="btn-blue cursor-pointer">Change Photo</label>
+                        <input type="file" id="profilePhoto" accept="image/*" class="hidden">
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label for="username" class="block mb-1 font-medium">Username</label>
+                    <input type="text" id="username" class="input-field" value="User123">
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="block mb-1 font-medium">Email</label>
+                    <input type="email" id="email" class="input-field" value="user@example.com">
+                </div>
+                <div class="flex flex-col">
+                    <label for="password" class="block mb-1 font-medium">Password</label>
+                    <input type="password" id="password" class="input-field" value="********">
+                    <button id="changePasswordBtn" class="text-sm text-blue-500 hover:underline mt-1">Change Password</button>
+                </div>
+                <div class="flex flex-col">
+                    <label for="language" class="block mb-1 font-medium">Language</label>
+                    <select id="language" class="input-field">
+                        <option value="en">English</option>
+                        <option value="es">hindi</option>
+                        <option value="fr">marwadi</option>
+                    </select>
+                </div>
+
+                <div class="mt-4">
+                    <a href="edit-profile.html" class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+                        Edit Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="/scripts/privacy.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UI</title>
+    <link rel="stylesheet" href="./styles/peergroup.css">
+    
+</head>
+<body>
+    <div class="body">
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="/images/users.png" alt="Myself">
+                <span>You</span>
+            </div>
+            <div class="chat-list">
+                <div class="chat-item" data-chat-id="monika" onclick="openChat('monika')">
+                    <img src="/images/users.png" alt="monika">
+                    <span>monika</span>
+                </div>
+                <div class="chat-item" data-chat-id="shahanaj" onclick="openChat('shahanaj')">
+                    <img src="/images/users.png" alt="User 2">
+                    <span>shahanaj</span>
+                </div>
+                <div class="chat-item" data-chat-id="khushi" onclick="openChat('khushi')">
+                    <img src="/images/users.png" alt="User 3">
+                    <span>khushi</span>
+                </div>
+                <div class="chat-item" data-chat-id="User 4" onclick="openChat('User 4')">
+                    <img src="/images/users.png" alt="User 4">
+                    <span>User 4</span>
+                </div>
+                <div class="chat-item" data-chat-id="User 5" onclick="openChat('User 5')">
+                    <img src="/images/users.png" alt="User 5">
+                    <span>User 5</span>
+                </div>
+            </div>
+        </div>
+        <div class="chatbox">
+            <div class="chat-header" id="chat-header">Select a Chat</div>
+            <div class="chat-messages" id="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="message" placeholder="Type a message...">
+                <button onclick="sendMessage()">
+                    <img src="/images/send.png" alt="User 5">
+                   
+
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script defer src="/scripts/peergroup.js"></script>
+</body>
+</html>
