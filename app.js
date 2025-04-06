@@ -25,4 +25,7 @@ app.get('/exercise',(req,res)=>{
 app.get('/mindfulness',(req,res)=>{
     res.render('mindfulness');
 })
+app.get('/privacy',(req,res)=>{
+    res.render('privacy');
+})
 app.listen(3000,()=>{console.log('listening on port 3000')});
